@@ -2,8 +2,8 @@ FROM alpine:3.10
 
 ENV TERRAFORM_VERSION=0.11.14
 
-RUN apk update
-RUN apk add gnupg python3
+RUN apk update 
+RUN apk add gnupg python3 groff 
 
 # Install awscli
 RUN easy_install-3.7 pip
